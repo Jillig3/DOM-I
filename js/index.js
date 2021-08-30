@@ -39,4 +39,49 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+          /* Selectors */
+          // Nav
+const nav = document.querySelector('.nav');
+const navItem1 = document.querySelector('.nav-item-1');
+const navItem2 = document.querySelector('.nav-item-2');
+const navItem3 = document.querySelector('.nav-item-3');
+const navItem4 = document.querySelector('.nav-item-4');
+const navItem5 = document.querySelector('.nav-item-5');
+const navItem6 = document.querySelector('.nav-item-6');
+let logo = document.getElementById("logo-img");
+
+          // CTA
+const cta = document.querySelector('.cta');
+const h1 = document.querySelector('.h1');
+const button = document.querySelector('.button');
+let headerImg = document.getElementById('.cta-img');
+
+          // Main Content
+const mainContent = document.querySelector('.main-content');
+const featuresH4 = document.querySelector('.features-h4');
+const featuresContent = document.querySelector('.features-content');
+const aboutH4 = document.querySelector('.about-h4');
+const aboutContent = document.querySelector('.about-content');
+const servicesH4 = document.querySelector('.services-h4');
+const servicesContent = document.querySelector('.services-content');
+const productH4 = document.querySelector('.product-h4');
+const productContent = document.querySelector('.product-content');
+const visionH4 = document.querySelector('.vision-h4');
+const visionContent = document.querySelector('.vision-content');
+let middleImg = document.getElementById('.middle-img');
+
+          // Contact
+const contact = document.querySelector('.contact');
+const contactH4 = document.querySelector('.contact-h4');
+const address = document.querySelector('.address');
+const phone = document.querySelector('.phone');
+const email = document.querySelector('.email');
+
+          //Footer
+const footer = document.querySelector('.footer');
+const copyright = document.querySelector('.copyright');
+
+
+nav.style.color = 'green';
