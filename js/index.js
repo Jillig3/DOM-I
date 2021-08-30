@@ -53,15 +53,24 @@ aTag[5].textContent = siteContent['nav']['nav-item-6'];
 
 const aValues = Object.values(siteContent['nav']);
 
-for(let i = 0; i < array.length; i++){
-  aTag[i].textContent = aValues[idx]
+for(let i = 0; i < aTag.length; i++){
+  aTag[i].textContent = aValues[i]
+}
+
+const changeColor = document.querySelectorAll('nav a');
+for (let i = 0; i < changeColor.length; i++){
+  changeColor[i].style.color = 'green';
 }
 
           // CTA
-const cta = document.querySelector('.cta');
-const h1 = document.querySelector('.h1');
-const button = document.querySelector('.button');
-let headerImg = document.getElementById('.cta-img');
+const cta = document.querySelector('cta');
+const h1 = document.querySelector('h1');
+const button = document.querySelector('button');
+let headerImg = document.getElementById('cta-img');
+
+h1.textContent = siteContent['cta']['h1'];
+button.textContent = siteContent['cta']['button'];
+
 
           // Main Content
 const mainContent = document.querySelector('.main-content');
@@ -88,7 +97,3 @@ const email = document.querySelector('.email');
 const footer = document.querySelector('.footer');
 const copyright = document.querySelector('.copyright');
 
-const changeColor = document.querySelectorAll('nav a');
-for (let i = 0; i < array.length; i++){
-  changeColor[i].style.changeColor = 'green';
-}
