@@ -43,14 +43,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
           /* Selectors */
           // Nav
-const nav = document.querySelector('.nav');
-const navItem1 = document.querySelector('.nav-item-1');
-const navItem2 = document.querySelector('.nav-item-2');
-const navItem3 = document.querySelector('.nav-item-3');
-const navItem4 = document.querySelector('.nav-item-4');
-const navItem5 = document.querySelector('.nav-item-5');
-const navItem6 = document.querySelector('.nav-item-6');
-let logo = document.getElementById("logo-img");
+const aTag = document.querySelectorAll('nav a');
+aTag[0].textContent = siteContent['nav']['nav-item-1'];
+aTag[1].textContent = siteContent['nav']['nav-item-2'];
+aTag[2].textContent = siteContent['nav']['nav-item-3'];
+aTag[3].textContent = siteContent['nav']['nav-item-4'];
+aTag[4].textContent = siteContent['nav']['nav-item-5'];
+aTag[5].textContent = siteContent['nav']['nav-item-6'];
+
+const aValues = Object.values(siteContent['nav']);
+
+for(let i = 0; i < array.length; i++){
+  aTag[i].textContent = aValues[idx]
+}
 
           // CTA
 const cta = document.querySelector('.cta');
@@ -83,5 +88,7 @@ const email = document.querySelector('.email');
 const footer = document.querySelector('.footer');
 const copyright = document.querySelector('.copyright');
 
-
-nav.style.color = 'green';
+const changeColor = document.querySelectorAll('nav a');
+for (let i = 0; i < array.length; i++){
+  changeColor[i].style.changeColor = 'green';
+}
